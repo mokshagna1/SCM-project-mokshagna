@@ -1,4 +1,41 @@
-<!DOCTYPE html>
+<!data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                datasets: [{
+                    label: 'Sales',
+                    data: [6500, 5900, 8000, 8100, 5600, 8500, 7300],
+                    backgroundColor: 'rgba(107, 115, 255, 0.2)',
+                    borderColor: 'rgba(107, 115, 255, 1)',
+                    borderWidth: 2,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            drawBorder: false
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
